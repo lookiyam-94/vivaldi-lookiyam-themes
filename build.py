@@ -40,9 +40,7 @@ TITLES = {}
 
 # Themes that were first published elsewhere keep their original ID, so
 # re-importing updates the installed theme instead of adding a duplicate.
-IDS = {
-    "cursor-dark": "1ad8bbf5-0cde-59b6-8063-eb6f8862c497",  # from omarchy-vivaldi-themes
-}
+IDS = {}
 
 
 def title_of(slug):
