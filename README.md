@@ -13,6 +13,9 @@ _Settings > Themes > Import Theme..._ and pick it.
 Vivaldi will not open files from inside `~/.config` or other system folders, so
 keep the archives somewhere like `~/Downloads`.
 
+Each archive has a plain-text description next to it (`themes/<theme>.txt`),
+ready to paste into the Vivaldi Themes gallery.
+
 ## Themes
 
 | File | Theme | Mode | Toolbars | Tab bar | Highlight | Start Page |
