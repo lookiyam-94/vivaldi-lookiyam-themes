@@ -82,16 +82,34 @@ Every current background from each Omarchy theme lives in
 as desktop wallpapers too. Graphite's former `11-orbits.png` is preserved in
 [`retired-backgrounds/graphite/`](retired-backgrounds/graphite/).
 
-| Folder | Count |
-|---|---|
-| [`bramble/`](backgrounds/bramble/) | 10 |
-| [`carbon/`](backgrounds/carbon/) | 10 |
-| [`graphite/`](backgrounds/graphite/) | 10 |
-| [`meridian/`](backgrounds/meridian/) | 10 |
-| [`northline/`](backgrounds/northline/) | 10 |
-| [`strata/`](backgrounds/strata/) | 10 |
-| [`umbra/`](backgrounds/umbra/) | 10 |
-| [`vesper/`](backgrounds/vesper/) | 10 |
+Each theme folder also has a `mobile/` folder with the same backgrounds as
+1080×2400 portrait images (9:20) for phones. See
+[Mobile backgrounds](#mobile-backgrounds).
+
+| Folder | Count | Mobile |
+|---|---|---|
+| [`bramble/`](backgrounds/bramble/) | 10 | [`mobile/`](backgrounds/bramble/mobile/) |
+| [`carbon/`](backgrounds/carbon/) | 10 | [`mobile/`](backgrounds/carbon/mobile/) |
+| [`graphite/`](backgrounds/graphite/) | 10 | [`mobile/`](backgrounds/graphite/mobile/) |
+| [`meridian/`](backgrounds/meridian/) | 10 | [`mobile/`](backgrounds/meridian/mobile/) |
+| [`northline/`](backgrounds/northline/) | 10 | [`mobile/`](backgrounds/northline/mobile/) |
+| [`strata/`](backgrounds/strata/) | 10 | [`mobile/`](backgrounds/strata/mobile/) |
+| [`umbra/`](backgrounds/umbra/) | 10 | [`mobile/`](backgrounds/umbra/mobile/) |
+| [`vesper/`](backgrounds/vesper/) | 10 | [`mobile/`](backgrounds/vesper/mobile/) |
+
+### Mobile backgrounds
+
+`backgrounds/<theme>/mobile/` holds every background cropped to a phone
+screen: 1080×2400 PNG, same file names. The desktop images are landscape, so
+the full height is kept and a 9:20 window is cut from the width, centred on the
+picture's brightest feature (the mark, the lamp, the moon) so the subject
+stays in frame. A few images name their focal point by hand in the `FOCUS`
+table at the top of `make_mobile.py`. Rebuild them with:
+
+```bash
+uv run --with numpy --with pillow python make_mobile.py                # every theme
+uv run --with numpy --with pillow python make_mobile.py --only umbra   # just these
+```
 
 ## How a palette maps onto Vivaldi
 
