@@ -1,8 +1,9 @@
 # Lookiyam themes for Vivaldi
 
-My six Omarchy themes from
+My Omarchy themes as Vivaldi browser themes, so the browser matches the
+desktop: the six from
 [omarchy-lookiyam-themes](https://github.com/lookiyam-94/omarchy-lookiyam-themes),
-as Vivaldi browser themes, so the browser matches the desktop.
+plus Cursor Dark.
 
 ## Install
 
@@ -17,6 +18,7 @@ keep the archives somewhere like `~/Downloads`.
 | File | Theme | Mode | Toolbars | Tab bar | Highlight | Start Page |
 |---|---|---|---|---|---|---|
 | `carbon.zip` | Carbon | dark | `#121212` | `#0e0e0e` | `#ff7b54` | `01-carbon` |
+| `cursor-dark.zip` | Cursor Dark | dark | `#191919` | `#141414` | `#8fbfff` | `01-cube` |
 | `graphite.zip` | Graphite | dark | `#191919` | `#141414` | `#8fbfff` | `08-graphite-mark` |
 | `meridian.zip` | Meridian | dark | `#101216` | `#0c0e11` | `#7cc8ff` | `01-meridian` |
 | `northline.zip` | Northline | dark | `#0c1013` | `#090c0f` | `#6ee7b7` | `01-northline` |
@@ -30,6 +32,18 @@ keep the archives somewhere like `~/Downloads`.
 Neutral charcoal toolbars and a darker tab bar, warm off-white text, and an
 ember-orange highlight for focus and selection. The Start Page shows a single
 hexagon with one glowing corner, like a carbon atom.
+
+#### Cursor Dark
+
+Inspired by Cursor, Grok and Grok Bot. The greys are lifted from Cursor's
+built-in Cursor Dark: toolbars on the editor's `#191919`, the tab bar on the
+title bar's `#141414`, with soft white text. Cursor's link blue marks focus and
+selection, and the white Cursor cube sits alone on the Start Page. All 14 of its
+backgrounds are in `sources/cursor-dark/backgrounds/`.
+
+Moved here from
+[omarchy-vivaldi-themes](https://github.com/lookiyam-94/omarchy-vivaldi-themes),
+with the same theme ID, so re-importing it updates the copy you already have.
 
 #### Graphite
 

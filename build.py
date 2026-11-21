@@ -38,6 +38,12 @@ IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")
 # Names that do not survive a plain title-case of the directory name.
 TITLES = {}
 
+# Themes that were first published elsewhere keep their original ID, so
+# re-importing updates the installed theme instead of adding a duplicate.
+IDS = {
+    "cursor-dark": "1ad8bbf5-0cde-59b6-8063-eb6f8862c497",  # from omarchy-vivaldi-themes
+}
+
 
 def title_of(slug):
     return TITLES.get(slug, slug.replace("-", " ").title())
@@ -84,7 +90,7 @@ def settings_for(slug, c, has_image):
         "contrast": 0,  # higher draws light strokes around the chrome
         "dimBlurred": False,
         "engineVersion": 1,
-        "id": str(uuid.uuid5(ID_NAMESPACE, slug)),
+        "id": IDS.get(slug) or str(uuid.uuid5(ID_NAMESPACE, slug)),
         "name": f"{title} (Omarchy)",
         "preferSystemAccent": False,
         "radius": 4,
