@@ -39,7 +39,7 @@ Inspired by Cursor, Grok and Grok Bot. The greys are lifted from Cursor's
 built-in Cursor Dark: toolbars on the editor's `#191919`, the tab bar on the
 title bar's `#141414`, with soft white text. Cursor's link blue marks focus and
 selection, and the white Cursor cube sits alone on the Start Page. All 14 of its
-backgrounds are in `sources/cursor-dark/backgrounds/`.
+backgrounds are in [`backgrounds/cursor-dark/`](backgrounds/cursor-dark/).
 
 Moved here from
 [omarchy-vivaldi-themes](https://github.com/lookiyam-94/omarchy-vivaldi-themes),
@@ -72,6 +72,21 @@ rock. The Start Page shows three stacked bars with the lowest one glowing.
 Deep blue-black toolbars, cool silver text and a pale ice-blue highlight. The
 Start Page shows an eclipse: a dark disc with a thin crescent of light.
 
+## Backgrounds
+
+Every background from every theme lives in [`backgrounds/`](backgrounds/), one
+folder per theme, at full size — use them as desktop wallpapers too.
+
+| Folder | Count |
+|---|---|
+| [`carbon/`](backgrounds/carbon/) | 6 |
+| [`cursor-dark/`](backgrounds/cursor-dark/) | 14 |
+| [`graphite/`](backgrounds/graphite/) | 11 |
+| [`meridian/`](backgrounds/meridian/) | 6 |
+| [`northline/`](backgrounds/northline/) | 6 |
+| [`strata/`](backgrounds/strata/) | 5 |
+| [`umbra/`](backgrounds/umbra/) | 6 |
+
 ## How a palette maps onto Vivaldi
 
 Each theme is read from its `colors.toml`:
@@ -83,15 +98,17 @@ Each theme is read from its `colors.toml`:
 | Foreground | `foreground` | Text |
 | Highlight | `accent` | Focus and selection |
 
-The Start Page shows the first image in the theme's `backgrounds/`, scaled to
-2560px WebP. Pages are never allowed to tint the tab bar, and there is no
-transparency, blur or contrast boost — Vivaldi's contrast setting draws light
-strokes around the chrome. Corners are a 4px radius.
+The Start Page shows the theme's first background (Graphite uses its mark,
+`08-graphite-mark`, instead of the first photograph), scaled to 2560px WebP.
+Pages are never allowed to tint the tab bar, and there is no transparency, blur
+or contrast boost — Vivaldi's contrast setting draws light strokes around the
+chrome. Corners are a 4px radius.
 
 ## Rebuilding
 
 The archives are generated, not hand-made. `sources/<theme>/` holds each
-theme's `colors.toml` and its Start Page image. With ImageMagick installed:
+theme's `colors.toml`, and the Start Page image comes from
+`backgrounds/<theme>/`. With ImageMagick installed:
 
 ```bash
 python3 build.py                      # every theme in sources/
@@ -104,8 +121,8 @@ To build straight from the installed Omarchy themes instead:
 python3 build.py --themes ~/.config/omarchy/themes --only graphite umbra meridian strata northline carbon
 ```
 
-That uses the first background of each theme, which for Graphite is a
-photograph rather than its mark.
+Graphite still gets its mark there, as long as the theme has
+`08-graphite-mark.png`.
 
 ## License
 

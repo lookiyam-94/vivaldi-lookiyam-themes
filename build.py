@@ -49,8 +49,21 @@ def title_of(slug):
     return TITLES.get(slug, slug.replace("-", " ").title())
 
 
+# The Start Page normally shows a theme's first background; these use another.
+START_PAGE = {
+    "graphite": "08-graphite-mark.png",  # its first backgrounds are photographs
+}
+
+
 def first_background(theme_dir):
+    slug = os.path.basename(os.path.normpath(theme_dir))
     bg_dir = os.path.join(theme_dir, "backgrounds")
+    if not os.path.isdir(bg_dir):
+        # Palettes live in sources/ while the full-size images live in the
+        # repository's backgrounds/ directory.
+        bg_dir = os.path.join(HERE, "backgrounds", slug)
+    if slug in START_PAGE and os.path.isfile(os.path.join(bg_dir, START_PAGE[slug])):
+        return os.path.join(bg_dir, START_PAGE[slug])
     if not os.path.isdir(bg_dir):
         return None
     files = sorted(f for f in os.listdir(bg_dir) if f.lower().endswith(IMAGE_EXTENSIONS))
