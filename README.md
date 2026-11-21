@@ -98,7 +98,7 @@ as desktop wallpapers too. Graphite's former `11-orbits.png` is preserved in
 
 | Folder | Count |
 |---|---|
-| [`bramble/`](backgrounds/bramble/) | 11 |
+| [`bramble/`](backgrounds/bramble/) | 10 |
 | [`carbon/`](backgrounds/carbon/) | 10 |
 | [`cursor-dark/`](backgrounds/cursor-dark/) | 14 |
 | [`graphite/`](backgrounds/graphite/) | 10 |
@@ -106,7 +106,7 @@ as desktop wallpapers too. Graphite's former `11-orbits.png` is preserved in
 | [`northline/`](backgrounds/northline/) | 10 |
 | [`strata/`](backgrounds/strata/) | 10 |
 | [`umbra/`](backgrounds/umbra/) | 10 |
-| [`vesper/`](backgrounds/vesper/) | 11 |
+| [`vesper/`](backgrounds/vesper/) | 10 |
 
 ## How a palette maps onto Vivaldi
 
