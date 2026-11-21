@@ -1,3 +1,3 @@
-Strata is a warm, earthy dark theme inspired by layers of rock. Brown-black toolbars and tab bar hold soft cream text, and an amber highlight marks focus and selection. The Start Page shows three stacked bars, with the lowest one glowing.
+Strata (Lookiyam) is a warm, earthy dark theme inspired by layers of rock. Brown-black toolbars and tab bar hold soft cream text, and an amber highlight marks focus and selection. The Start Page shows three stacked bars, with the lowest one glowing.
 
 Part of the Lookiyam themes, made to match the Strata theme for the Omarchy Linux desktop. All backgrounds and the build script are at https://github.com/lookiyam-94/vivaldi-lookiyam-themes
