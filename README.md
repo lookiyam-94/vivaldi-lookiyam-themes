@@ -77,18 +77,20 @@ Start Page shows an eclipse: a dark disc with a thin crescent of light.
 
 ## Backgrounds
 
-Every background from every theme lives in [`backgrounds/`](backgrounds/), one
-folder per theme, at full size — use them as desktop wallpapers too.
+Every current background from each Omarchy theme lives in
+[`backgrounds/`](backgrounds/), one folder per theme, at full size — use them
+as desktop wallpapers too. Graphite's former `11-orbits.png` is preserved in
+[`retired-backgrounds/graphite/`](retired-backgrounds/graphite/).
 
 | Folder | Count |
 |---|---|
-| [`carbon/`](backgrounds/carbon/) | 6 |
+| [`carbon/`](backgrounds/carbon/) | 10 |
 | [`cursor-dark/`](backgrounds/cursor-dark/) | 14 |
-| [`graphite/`](backgrounds/graphite/) | 11 |
-| [`meridian/`](backgrounds/meridian/) | 6 |
-| [`northline/`](backgrounds/northline/) | 6 |
-| [`strata/`](backgrounds/strata/) | 5 |
-| [`umbra/`](backgrounds/umbra/) | 6 |
+| [`graphite/`](backgrounds/graphite/) | 10 |
+| [`meridian/`](backgrounds/meridian/) | 10 |
+| [`northline/`](backgrounds/northline/) | 10 |
+| [`strata/`](backgrounds/strata/) | 10 |
+| [`umbra/`](backgrounds/umbra/) | 10 |
 
 ## How a palette maps onto Vivaldi
 
