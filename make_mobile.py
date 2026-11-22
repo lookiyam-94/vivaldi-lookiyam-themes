@@ -31,6 +31,7 @@ Image.MAX_IMAGE_PIXELS = None
 # yourself: "<theme>/<file>" -> horizontal centre as a 0..1 fraction of the width.
 FOCUS = {
     "umbra/03-diamond-ring.png": 2226 / 3840,  # the whole eclipse, not just the bright bead on its rim
+    "harbor/07-pierhead.png": 2472 / 3840,  # the light and its reflection, not the long pier line
 }
 
 

@@ -1,7 +1,7 @@
 # Lookiyam themes for Vivaldi
 
 My Omarchy themes as Vivaldi browser themes, so the browser matches the
-desktop: the eight from
+desktop: the nine from
 [omarchy-lookiyam-themes](https://github.com/lookiyam-94/omarchy-lookiyam-themes).
 
 ## Install
@@ -20,8 +20,9 @@ ready to paste into the Vivaldi Themes gallery.
 | File | Theme | Mode | Toolbars | Tab bar | Highlight | Start Page |
 |---|---|---|---|---|---|---|
 | `bramble.zip` | Bramble | dark | `#140d12` | `#090b0d` | `#c791a9` | `01-bramble` |
-| `carbon.zip` | Carbon | dark | `#121212` | `#0e0e0e` | `#ff7b54` | `01-carbon` |
+| `carbon.zip` | Carbon | dark | `#151719` | `#111315` | `#ff861a` | `01-carbon` |
 | `graphite.zip` | Graphite | dark | `#191919` | `#141414` | `#8fbfff` | `08-graphite-mark` |
+| `harbor.zip` | Harbor | dark | `#131f33` | `#0e182a` | `#d9bd83` | `01-harbor` |
 | `meridian.zip` | Meridian | dark | `#101216` | `#0c0e11` | `#7cc8ff` | `01-meridian` |
 | `northline.zip` | Northline | dark | `#0c1013` | `#090c0f` | `#6ee7b7` | `01-northline` |
 | `strata.zip` | Strata | dark | `#14120f` | `#100e0c` | `#e6b072` | `01-strata` |
@@ -38,8 +39,8 @@ glowing blackberry.
 
 #### Carbon
 
-Neutral charcoal toolbars and a darker tab bar, warm off-white text, and an
-ember-orange highlight for focus and selection. The Start Page shows a single
+Steel-grey toolbars and a darker tab bar, cool off-white text, and a vivid
+orange highlight for focus and selection. The Start Page shows a single steel
 hexagon with one glowing corner, like a carbon atom.
 
 #### Graphite
@@ -47,6 +48,12 @@ hexagon with one glowing corner, like a carbon atom.
 Soft graphite-grey toolbars over a deeper tab bar, near-white text, and a calm
 blue highlight. The Start Page shows the Graphite mark: an open ring with a bar
 of blue light through its gap.
+
+#### Harbor
+
+Deep navy toolbars over a darker navy tab bar, warm off-white text, and a
+pale-gold highlight. The Start Page shows two open breakwaters with one harbor
+light between them.
 
 #### Meridian
 
@@ -91,6 +98,7 @@ Each theme folder also has a `mobile/` folder with the same backgrounds as
 | [`bramble/`](backgrounds/bramble/) | 10 | [`mobile/`](backgrounds/bramble/mobile/) |
 | [`carbon/`](backgrounds/carbon/) | 10 | [`mobile/`](backgrounds/carbon/mobile/) |
 | [`graphite/`](backgrounds/graphite/) | 10 | [`mobile/`](backgrounds/graphite/mobile/) |
+| [`harbor/`](backgrounds/harbor/) | 10 | [`mobile/`](backgrounds/harbor/mobile/) |
 | [`meridian/`](backgrounds/meridian/) | 10 | [`mobile/`](backgrounds/meridian/mobile/) |
 | [`northline/`](backgrounds/northline/) | 10 | [`mobile/`](backgrounds/northline/mobile/) |
 | [`strata/`](backgrounds/strata/) | 10 | [`mobile/`](backgrounds/strata/mobile/) |
@@ -142,7 +150,7 @@ python3 build.py --only umbra carbon  # just these
 To build straight from the installed Omarchy themes instead:
 
 ```bash
-python3 build.py --themes ~/.config/omarchy/themes --only graphite umbra meridian strata northline carbon bramble vesper
+python3 build.py --themes ~/.config/omarchy/themes --only graphite umbra meridian strata northline carbon bramble vesper harbor
 ```
 
 Graphite still gets its mark there, as long as the theme has
